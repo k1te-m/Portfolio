@@ -1,0 +1,105 @@
+body {
+    background-image: url(../images/green_dust_scratch.png);
+  }
+  html,
+  body {
+    min-height: 100%;
+    margin: 0;
+  }
+  .navbar-brand {
+    background-color: orange;
+  }
+  .container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    height: 100%;
+    width: 90%;
+    margin-bottom: 75px;
+    border: 5px solid orange;
+    border-radius: 25px;
+    margin-top: 75px;
+  }
+  .container-fluid {
+    display: flex;
+  }
+  .footer-dark {
+    border-top: 7px solid orange;
+  }
+  .navbar-dark {
+    margin-bottom: 35px;
+  }
+  #me {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  #subButton {
+    background-color: orange;
+  }
+  #contactBox {
+    margin-right: 15px;
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap */
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media screen and (min-width: 576px) {
+    .container {
+      background-color: white;
+    }
+    .container img {
+      width: auto;
+      flex-direction: column;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+    .container {
+      background-color: white;
+      width: 57.5%;
+      float: left;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .container img {
+      width: auto;
+    }
+    #contactBox {
+      margin-right: 45px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    .container {
+      background-color: white;
+      margin-top: 25px;
+      margin-bottom: 100px;
+      width: 80%;
+    }
+    #contactMe {
+      width: 60%;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    #contactBox {
+      margin-right: 100px;
+    }
+    #aboutMe {
+      width: 60%;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .container {
+      background-color: white;
+    }
+    .container img {
+      width: auto;
+    }
+  }

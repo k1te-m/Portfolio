@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/k1te-m/Portfolio/issues"
   },
-  "homepage": "https://github.com/k1te-m/Portfolio#readme"
+  "homepage": "https://github.com/k1te-m/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
 }

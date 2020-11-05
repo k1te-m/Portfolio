@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   Repo.init({
     name: DataTypes.STRING,
+    github: DataTypes.STRING,
     imageURL: DataTypes.STRING
   }, {
     sequelize,

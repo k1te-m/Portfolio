@@ -1,7 +1,7 @@
 $(document).ready(function () {
  
 
-  $("#subButton").on("click ", function (event) {
+  $("#subButton").on("click", function (event) {
     event.preventDefault();
 
     userName = $("#name").val().trim();

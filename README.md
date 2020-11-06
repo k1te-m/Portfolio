@@ -3,7 +3,9 @@
   ![GitHub](https://img.shields.io/github/license/k1te-m/Portfolio)![GitHub top language](https://img.shields.io/github/languages/top/k1te-m/Portfolio)
 
   ## Descripton
-  A responsive website currently deployed on Heroku to act as a portfolio for my coding projects.
+  A responsive website currently deployed on Heroku to act as a portfolio for my coding projects. This application utilizes the npm packages express, express handlebars, mysql2, 
+  and sequelize. All pages are served through handlebars. The portfolio section connects to a JawsDB database where I have stored information about any repositories I am 
+  displaying in my portfolio and dynamically loads them to the page.
 
   ## Table of Contents
   * [Installation](#installation)

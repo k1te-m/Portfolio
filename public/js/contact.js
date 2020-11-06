@@ -1,6 +1,4 @@
 $(document).ready(function () {
- 
-
   $("#subButton").on("click", function (event) {
     event.preventDefault();
 
@@ -8,18 +6,29 @@ $(document).ready(function () {
     userEmail = $("#email").val().trim();
     userMessage = $("textArea").val().trim();
 
-    let newMessage = {};
-    newMessage["name"] = userName;
-    newMessage["email"] = userEmail;
-    newMessage["message"] = userMessage;
-    newMessage["createdAt"] = new Date(Date.now()).toISOString();
-    newMessage["updatedAt"] = new Date(Date.now()).toISOString();
+    if (userName == "" || userEmail == "" || userMessage == "") {
+      alert("All fields must be entered...");
+    } else {
+      let newMessage = {};
+      newMessage["name"] = userName;
+      newMessage["email"] = userEmail;
+      newMessage["message"] = userMessage;
+      newMessage["createdAt"] = new Date(Date.now()).toISOString();
+      newMessage["updatedAt"] = new Date(Date.now()).toISOString();
 
-    console.log(newMessage);
+      console.log(newMessage);
 
-    $.post("/contact/add", newMessage).done(function(){
-        alert("Message Sent!");
-        window.location.href= "/contact";
-    });
+      // $.post("/contact/add", newMessage).done(function () {
+      //   console.log("Message Sent");
+      // });
+
+      $.post("/contact/add", newMessage, function(req, res) {
+        if (res == "success") {
+            $("#messageModal").modal("show");
+        } else {
+          alert("error!");
+        }
+      })
+    }
   });
 });

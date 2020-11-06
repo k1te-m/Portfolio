@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     userName = $("#name").val().trim();
     userEmail = $("#email").val().trim();
-    userMessage = $("textArea").val().trim();
+    userMessage = $("#textArea").val().trim();
 
     if (userName == "" || userEmail == "" || userMessage == "") {
       alert("All fields must be entered...");
@@ -25,6 +25,11 @@ $(document).ready(function () {
       $.post("/contact/add", newMessage, function(req, res) {
         if (res == "success") {
             $("#messageModal").modal("show");
+            $("[data-dismiss=modal]").on("click", function(event) {
+              $("#name").val("");
+              $("#email").val("");
+              $("#textArea").val("");
+            })
         } else {
           alert("error!");
         }

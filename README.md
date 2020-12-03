@@ -24,7 +24,7 @@
 
   *Examples of project use:*
   
-  [Heroku-Deployed-Link](https://km-port.herokuapp.com/)
+  [https://km-port-hb.herokuapp.com/](https://km-port-hb.herokuapp.com/)
   
   ![Demo-Image](./public/images/demo.PNG)
 
